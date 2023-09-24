@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-deploy
+spec:
+  replicas: 8
+  selector:
+    matchLabels:
+      app-state: stateless
+  template:
+    metadata:
+      labels:
+        app-state: stateless
+    spec:
+      terminationGracePeriodSeconds: 0
+      nodeSelector:
+        app-state: stateless
+      containers:
+        - name: inflate
+          image: public.ecr.aws/eks-distro/kubernetes/pause:3.7
