@@ -1,0 +1,4 @@
+#Add files to ignore
+*.terraform.lock.hcl
+#Add folder to ignore
+**/.terraform/*

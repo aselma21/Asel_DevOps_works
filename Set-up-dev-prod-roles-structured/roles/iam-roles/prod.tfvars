@@ -1,0 +1,6 @@
+trusted_account_number = "879500880845"
+developer_role = "DeveloperAccessRoleProd"
+devops_role = "DevopsAccessRoleProd"
+developer_policy = "Read-permissions-on-EKS-dev"
+devops_policy = "deny-to-secret"
+stage = "prod"

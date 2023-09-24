@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: external-dns
+  namespace: dns-test
+  labels:
+    app.kubernetes.io/name: external-dns
+spec:
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: external-dns
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: external-dns
+    spec:
+      serviceAccountName: external-dns
+      containers:
+        - name: external-dns
+          image: registry.k8s.io/external-dns/external-dns:v0.13.1
+          args:
+            - --source=service
+            - --source=ingress
+          #  - --domain-filter=exchangeweb.net # will make ExternalDNS see only the hosted zones matching provided domain, omit to process all available hosted zones
+            - --provider=aws
+            - --aws-assume-role=arn:aws:iam::401413892014:role/DNSAccessRoleForProject
+            - --aws-zone-type=public # only look at public hosted zones (valid values are public, private or no value for both)
+            - --registry=txt
+            - --txt-owner-id=external-dns #Z01304813F8C6FF04Y61T
+           # - --annotation-filter=kubernetes.io/ingress.class=nginx
+           # - --annotation-filter=external-dns.alpha.kubernetes.io/hostname
+            - --log-level=debug
+   ## securityContext:
+    ##  fsGroup: 65534 # For ExternalDNS to be able to read Kubernetes and AWS token files

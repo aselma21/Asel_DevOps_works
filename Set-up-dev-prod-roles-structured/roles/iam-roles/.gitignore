@@ -1,0 +1,12 @@
+#add terraform folder to ignore
+**/.terraform/*
+
+#add terraform lock to ignore
+*.terraform.lock.hcl
+
+#add diagrom to ignore
+*.terraform1.png
+*.var1.png
+*.diag.png
+
+

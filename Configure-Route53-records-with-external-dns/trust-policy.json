@@ -1,0 +1,28 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "Federated": "arn:aws:iam::036692858685:oidc-provider/oidc.eks.us-east-1.amazonaws.com/id/9B936F5BB28FEF2C878B2227C819CB5E"
+            },
+            "Action": "sts:AssumeRoleWithWebIdentity",
+            "Condition": {
+                "StringEquals": {
+                    "oidc.eks.us-east-1.amazonaws.com/id/9B936F5BB28FEF2C878B2227C819CB5E:aud": "sts.amazonaws.com",
+                    "oidc.eks.us-east-1.amazonaws.com/id/9B936F5BB28FEF2C878B2227C819CB5E:sub": "system:serviceaccount:dns-test:external-dns"
+                }
+            }
+        },
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::036692858685:role/DNSAccessRoleB"
+            },
+            "Action": "sts:AssumeRole"
+        }
+    ]
+}
+
+
+

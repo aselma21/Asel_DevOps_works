@@ -1,0 +1,4 @@
+version = 1.2
+replicas = 1
+namespace = versus-dev
+hostname = versus-web-dev-22jcentos.exchangeweb.net

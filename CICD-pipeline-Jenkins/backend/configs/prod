@@ -1,0 +1,10 @@
+version = 1.0
+replicas = 4
+namespace = versus-prod
+hostname = versus-api-prod-22jcentos.exchangeweb.net
+secret_name = versus-mysql-credentials
+service_account = versus-prod-sa
+sa_secret_role = arn:aws:iam::036692858685:role/versus-prod-read-secrets-role
+db_name = VERSUS_DB
+db_host = versus-mysql.cy32g4owxpjc.us-east-1.rds.amazonaws.com
+db_port = 3306

@@ -1,0 +1,10 @@
+version = 1.2
+replicas = 1
+namespace = versus-dev
+hostname = versus-api-dev-22jcentos.exchangeweb.net
+secret_name = versus-mysql-credentials
+service_account = versus-dev-sa
+sa_secret_role = arn:aws:iam::036692858685:role/versus-dev-read-secrets-role
+db_name = VERSUS_DB
+db_host = versus-mysql.cy32g4owxpjc.us-east-1.rds.amazonaws.com
+db_port = 3306

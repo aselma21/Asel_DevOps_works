@@ -1,0 +1,2417 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "username": "admin",
+      "password": "pbkdf2_sha256$180000$y2j7yPeEiXbi$1vIJleJoZX/GfLrw5wdqopZG4lqzNAr5umJsXM38bOc=",
+      "is_superuser": true,
+      "is_staff": true,
+      "is_active": true
+    }
+  },
+  {
+    "model": "api.category",
+    "pk": 1,
+    "fields": {
+      "name": "Universities",
+      "photo_url": "https://vskg-public.s3-us-west-2.amazonaws.com/category_universities.jpg"
+    }
+  },
+  {
+    "model": "api.category",
+    "pk": 2,
+    "fields": {
+      "name": "Restaurants",
+      "photo_url": "https://vskg-public.s3-us-west-2.amazonaws.com/category_restaurants.jpg"
+    }
+  },
+  {
+    "model": "api.category",
+    "pk": 3,
+    "fields": {
+      "name": "Bars",
+      "photo_url": "https://vskg-public.s3-us-west-2.amazonaws.com/category_bars.jpg"
+    }
+  },
+  {
+    "model": "api.category",
+    "pk": 4,
+    "fields": {
+      "name": "Coffee shops",
+      "photo_url": "https://vskg-public.s3-us-west-2.amazonaws.com/category_coffee_shops.jpg"
+    }
+  },
+  {
+    "model": "api.type",
+    "pk": 1,
+    "fields": {
+      "name": "String",
+      "type": "str"
+    }
+  },
+  {
+    "model": "api.type",
+    "pk": 2,
+    "fields": {
+      "name": "Integer",
+      "type": "int"
+    }
+  },
+  {
+    "model": "api.type",
+    "pk": 3,
+    "fields": {
+      "name": "Boolean",
+      "type": "bool"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 1,
+    "fields": {
+      "category": 1,
+      "type": 1,
+      "name": "Location"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 2,
+    "fields": {
+      "category": 1,
+      "type": 1,
+      "name": "Teaching language"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 3,
+    "fields": {
+      "category": 1,
+      "type": 2,
+      "name": "Students per teacher"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 4,
+    "fields": {
+      "category": 1,
+      "type": 1,
+      "name": "Foundation date"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 5,
+    "fields": {
+      "category": 1,
+      "type": 1,
+      "name": "Dormitory"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 6,
+    "fields": {
+      "category": 1,
+      "type": 1,
+      "name": "Clubs"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 7,
+    "fields": {
+      "category": 1,
+      "type": 2,
+      "name": "Education quality"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 8,
+    "fields": {
+      "category": 1,
+      "type": 1,
+      "name": "Required documents"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 9,
+    "fields": {
+      "category": 1,
+      "type": 1,
+      "name": "Scholarship"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 10,
+    "fields": {
+      "category": 1,
+      "type": 1,
+      "name": "Tuition fees for KG Citizens"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 11,
+    "fields": {
+      "category": 1,
+      "type": 1,
+      "name": "Tuition fees for foreign students"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 12,
+    "fields": {
+      "category": 1,
+      "type": 1,
+      "name": "Average price increases pre year"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 13,
+    "fields": {
+      "category": 1,
+      "type": 1,
+      "name": "Grants per year per students"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 14,
+    "fields": {
+      "category": 1,
+      "type": 2,
+      "name": "Number of faculties"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 15,
+    "fields": {
+      "category": 1,
+      "type": 2,
+      "name": "Number of campuses"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 16,
+    "fields": {
+      "category": 1,
+      "type": 1,
+      "name": "Sport clubs"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 17,
+    "fields": {
+      "category": 1,
+      "type": 1,
+      "name": "Bribe"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 18,
+    "fields": {
+      "category": 1,
+      "type": 1,
+      "name": "Average bribe price"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 19,
+    "fields": {
+      "category": 1,
+      "type": 2,
+      "name": "State assessment"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 20,
+    "fields": {
+      "category": 1,
+      "type": 2,
+      "name": "Review score"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 21,
+    "fields": {
+      "category": 1,
+      "type": 1,
+      "name": "Reviews"
+    }
+  }, {
+    "model": "api.product",
+    "pk": 1,
+    "fields": {
+      "category": 1,
+      "photo_url": "https://vskg-public.s3-us-west-2.amazonaws.com/%D0%9C%D0%A3%D0%90.png",
+      "name": "IAU (International Ala-Too University)"
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 1,
+    "fields": {
+      "product": 1,
+      "field": 1,
+      "data": {
+        "value": "Bishkek, Ankara street 1/8, Tunguch"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 2,
+    "fields": {
+      "product": 1,
+      "field": 2,
+      "data": {
+        "value": "English"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 3,
+    "fields": {
+      "product": 1,
+      "field": 3,
+      "data": {
+        "value": 35
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 4,
+    "fields": {
+      "product": 1,
+      "field": 4,
+      "data": {
+        "value":"In 1996"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 5,
+    "fields": {
+      "product": 1,
+      "field": 5,
+      "data": {
+        "value": "2 dormitories in university"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 6,
+    "fields": {
+      "product": 1,
+      "field": 6,
+      "data": {
+        "value": "Student Council; V-Fund; Komuz club \"Nur\"; KVN; Alatoo - dance; International Relations Club"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 7,
+    "fields": {
+      "product": 1,
+      "field": 7,
+      "data": {
+        "value": 4
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 8,
+    "fields": {
+      "product": 1,
+      "field": 8,
+      "data": {
+        "value": "State document on secondary general or secondary vocational education (certificate); ORT original certificate; Copy of the passport; Certificate of registration or military ID; 4 photos of 3x4 size; An initial payment of 30% of the total tuition fees."
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 9,
+    "fields": {
+      "product": 1,
+      "field": 9,
+      "data": {
+        "value": "4000 soms per year"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 10,
+    "fields": {
+      "product": 1,
+      "field": 10,
+      "data": {
+        "value": "From 72 000 to 280 000 soms"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 11,
+    "fields": {
+      "product": 1,
+      "field": 11,
+      "data": {
+        "value": "From 200 000 to 280 000 soms"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 12,
+    "fields": {
+      "product": 1,
+      "field": 12,
+      "data": {
+        "value": "Every year approximately increases to 12 000 soms"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 13,
+    "fields": {
+      "product": 1,
+      "field": 13,
+      "data": {
+        "value": "ORT"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 14,
+    "fields": {
+      "product": 1,
+      "field": 14,
+      "data": {
+        "value": 14
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 15,
+    "fields": {
+      "product": 1,
+      "field": 15,
+      "data": {
+        "value": 4
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 16,
+    "fields": {
+      "product": 1,
+      "field": 16,
+      "data": {
+        "value": "Chess, toguz korgool, swimming, tennis, ordo Greco-Roman and freestyle wrestling, volleyball, basketball, football, judo"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 17,
+    "fields": {
+      "product": 1,
+      "field": 17,
+      "data": {
+        "value": "There were no cases of bribery at this university"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 18,
+    "fields": {
+      "product": 1,
+      "field": 18,
+      "data": {
+        "value": null
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 19,
+    "fields": {
+      "product": 1,
+      "field": 19,
+      "data": {
+        "value": 4
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 20,
+    "fields": {
+      "product": 1,
+      "field": 20,
+      "data": {
+        "value": 4
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 21,
+    "fields": {
+      "product": 1,
+      "field": 21,
+      "data": {
+        "value": "Mixed, mostly positive"
+      }
+    }
+  }, {
+    "model": "api.product",
+    "pk": 2,
+    "fields": {
+      "category": 1,
+      "photo_url": "https://vskg-public.s3-us-west-2.amazonaws.com/%D0%9A%D0%93%D0%9C%D0%90.png",
+      "name": "KSMA (Kyrgyz state medical academy)"
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 22,
+    "fields": {
+      "product": 2,
+      "field": 1,
+      "data": {
+        "value": "Bishkek, Akhunbaev street 92"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 23,
+    "fields": {
+      "product": 2,
+      "field": 2,
+      "data": {
+        "value": "English"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 24,
+    "fields": {
+      "product": 2,
+      "field": 3, "data": {
+        "value": 40
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 25,
+    "fields": {
+      "product": 2,
+      "field": 4,
+      "data": {
+        "value": "In 1939"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 26,
+    "fields": {
+      "product": 2,
+      "field": 5,
+      "data": {
+        "value": "6 dormitories"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 27,
+    "fields": {
+      "product": 2,
+      "field": 6,
+      "data": {
+        "value": "Student council, several language clubs, dancing and hiking"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 28,
+    "fields": {
+      "product": 2,
+      "field": 7,
+      "data": {
+        "value": 3
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 29,
+    "fields": {
+      "product": 2,
+      "field": 8,
+      "data": {
+        "value": "Application addressed to the rector of KSMA (sample); ORT original certificate; Secondary education document (certificate); 2 photos (4x6 cm), 4 photos (3x4 cm); Military ID or certificate of registration; Receipt for payment of documents acceptance; Copy of passport or identity card; "
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 30,
+    "fields": {
+      "product": 2,
+      "field": 9,
+      "data": {
+        "value": "1500 soms per month"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 31,
+    "fields": {
+      "product": 2,
+      "field": 10,
+      "data": {
+        "value": "From 25 000 to 66 000 soms."
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 32,
+    "fields": {
+      "product": 2,
+      "field": 11,
+      "data": {
+        "value": "From 33 000 to 120 000 soms"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 33,
+    "fields": {
+      "product": 2,
+      "field": 12,
+      "data": {
+        "value": "Every year approximately increases to 2000 soms"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 34,
+    "fields": {
+      "product": 2,
+      "field": 13,
+      "data": {
+        "value": "ОРТ"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 35,
+    "fields": {
+      "product": 2,
+      "field": 14,
+      "data": {
+        "value": 6
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 36,
+    "fields": {
+      "product": 2,
+      "field": 15,
+      "data": {
+        "value": 9
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 37,
+    "fields": {
+      "product": 2,
+      "field": 16,
+      "data": {
+        "value": "Football and tennis tournaments among students, as well as additional sections of almost all types"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 38,
+    "fields": {
+      "product": 2,
+      "field": 17,
+      "data": {
+        "value": "Bribery was seen in most cases"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 39,
+    "fields": {
+      "product": 2,
+      "field": 18,
+      "data": {
+        "value": "TOP 1 for corruption. The corruption rate was 75%. The average cost of one item is 1,138 soms. To close the session, students spend on average 3,116 soms."
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 40,
+    "fields": {
+      "product": 2,
+      "field": 19,
+      "data": {
+        "value": 5
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 41,
+    "fields": {
+      "product": 2,
+      "field": 20,
+      "data": {
+        "value": 3
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 42,
+    "fields": {
+      "product": 2,
+      "field": 21,
+      "data": {
+        "value": "Mostly negative"
+      }
+    }
+  }, {
+    "model": "api.product",
+    "pk": 3,
+    "fields": {
+      "category": 1,
+      "photo_url": "https://vskg-public.s3-us-west-2.amazonaws.com/%D0%90%D0%A3%D0%A6%D0%90.png",
+      "name": "AUCA (American University of Central Asia)"
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 43,
+    "fields": {
+      "product": 3,
+      "field": 1,
+      "data": {
+        "value": "Bishek, Aaly Tokombaev street 7/6"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk":44,
+    "fields": {
+      "product": 3,
+      "field": 2,
+      "data": {
+        "value": "English"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 45,
+    "fields": {
+      "product": 3,
+      "field": 3, "data": {
+        "value": 30
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 46,
+    "fields": {
+      "product": 3,
+      "field": 4,
+      "data": {
+        "value": "In 1993"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 47,
+    "fields": {
+      "product": 3,
+      "field": 5,
+      "data": {
+        "value": "1 international dormitory"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 48,
+    "fields": {
+      "product": 3,
+      "field": 6,
+      "data": {
+        "value": "Programming courses at AUCA Devcit. Many language courses"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 49,
+    "fields": {
+      "product": 3,
+      "field": 7,
+      "data": {
+        "value": 4
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 50,
+    "fields": {
+      "product": 3,
+      "field": 8,
+      "data": {
+        "value": "Photo 3x4; Registration fee; Secondary education document; Copy of your passport; Passing an entrance exam, which consists of three parts: an English proficiency test, an essay writing and a math test. Pre-registration for the exam is required."
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 51,
+    "fields": {
+      "product": 3,
+      "field": 9,
+      "data": {
+        "value": "24 000 soms per year"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 52,
+    "fields": {
+      "product": 3,
+      "field": 10,
+      "data": {
+        "value": "From 480 000 до 800 000 soms"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 53,
+    "fields": {
+      "product": 3,
+      "field": 11,
+      "data": {
+        "value": "From 520 000 to 960 000 soms"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 54,
+    "fields": {
+      "product": 3,
+      "field": 12,
+      "data": {
+        "value": "Every year approximately increases to 16 000 soms"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 55,
+    "fields": {
+      "product": 3,
+      "field": 13,
+      "data": {
+        "value": "ORT"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 56,
+    "fields": {
+      "product": 3,
+      "field": 14,
+      "data": {
+        "value": 16
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 57,
+    "fields": {
+      "product": 3,
+      "field": 15,
+      "data": {
+        "value": 1
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 58,
+    "fields": {
+      "product": 3,
+      "field": 16,
+      "data": {
+        "value": "Athletics Tournaments; Sport festivals; Football, volleyball and basketball tournaments"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 59,
+    "fields": {
+      "product": 3,
+      "field": 17,
+      "data": {
+        "value": "There were no cases of bribery at this university"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 60,
+    "fields": {
+      "product": 3,
+      "field": 18,
+      "data": {
+        "value": null
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 61,
+    "fields": {
+      "product": 3,
+      "field": 19,
+      "data": {
+        "value": 5
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 62,
+    "fields": {
+      "product": 3,
+      "field": 20,
+      "data": {
+        "value": 4
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 63,
+    "fields": {
+      "product": 3,
+      "field": 21,
+      "data": {
+        "value": "Mixed reviews, more positive"
+      }
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 4,
+    "fields": {
+      "category": 1,
+      "photo_url": "https://vskg-public.s3-us-west-2.amazonaws.com/%D0%A3%D0%A6%D0%90.png",
+      "name": "UCA (University of Central Asia)"
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 64,
+    "fields": {
+      "product": 4,
+      "field": 1,
+      "data": {
+        "value": "Naryn, Lenin street 310"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 65,
+    "fields": {
+      "product": 4,
+      "field": 2,
+      "data": {
+        "value": "English"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 66,
+    "fields": {
+      "product": 4,
+      "field": 3,
+      "data": {
+        "value": 25
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 67,
+    "fields": {
+      "product": 4,
+      "field": 4,
+      "data": {
+        "value": "In 2000"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 68,
+    "fields": {
+      "product": 4,
+      "field": 5,
+      "data": {
+          "value": "3 dormitories"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 69,
+    "fields": {
+      "product": 4,
+      "field": 6,
+      "data": {
+        "value": "Spanish Language Club; Yoga Club; UCA Media Club; Discussion Club"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 70,
+    "fields": {
+      "product": 4,
+      "field": 7,
+      "data": {
+        "value": 5
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 71,
+    "fields": {
+      "product": 4,
+      "field": 8,
+      "data": {
+        "value": "State document on secondary general or secondary vocational education (certificate); ORT original certificate; Copy of the passport; Certificate of registration or military ID; 4 photos of 3x4 size; An initial payment of 30% of the total tuition fee;"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 72,
+    "fields": {
+      "product": 4,
+      "field": 9,
+      "data": {
+        "value": "16 000 сом в год"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 73,
+    "fields": {
+      "product": 4,
+      "field": 10,
+      "data": {
+        "value": "From 400 000 to 720 000 soms"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 74,
+    "fields": {
+      "product": 4,
+      "field": 11,
+      "data": {
+        "value": "From 480 000 to 800 000 soms"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 75,
+    "fields": {
+      "product": 4,
+      "field": 12,
+      "data": {
+        "value": "Increase wasn't observed"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 76,
+    "fields": {
+      "product": 4,
+      "field": 13,
+      "data": {
+        "value": "ORT"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 77,
+    "fields": {
+      "product": 4,
+      "field": 14,
+      "data": {
+        "value": 14
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 78,
+    "fields": {
+      "product": 4,
+      "field": 15,
+      "data": {
+        "value": 1
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 79,
+    "fields": {
+      "product": 4,
+      "field": 16,
+      "data": {
+        "value": "Football fields, tennis courts, fitness clubs and gyms where you can play tennis, basketball, badminton, volleyball and football"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 80,
+    "fields": {
+      "product": 4,
+      "field": 17,
+      "data": {
+        "value": "There were no cases of bribery at this university"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 81,
+    "fields": {
+      "product": 4,
+      "field": 18,
+      "data": {
+        "value": null
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 82,
+    "fields": {
+      "product": 4,
+      "field": 19,
+      "data": {
+        "value": 5
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 83,
+    "fields": {
+      "product": 4,
+      "field": 20,
+      "data": {
+        "value": 5
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 84,
+    "fields": {
+      "product": 4,
+      "field": 21,
+      "data": {
+        "value": "Mostly positive"
+      }
+    }
+  }, {
+    "model": "api.product",
+    "pk": 5,
+    "fields": {
+      "category": 1,
+      "photo_url": "https://vskg-public.s3-us-west-2.amazonaws.com/%D0%9A%D0%93%D0%AE%D0%90.png",
+      "name": "KSLA (Kyrgyz State Law Academy)"
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 85,
+    "fields": {
+      "product": 5,
+      "field": 1,
+      "data": {
+        "value": "Bishkek, Chui avenue 180А"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 86,
+    "fields": {
+      "product": 5,
+      "field": 2,
+      "data": {
+        "value": "Russian"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 87,
+    "fields": {
+      "product": 5,
+      "field": 3,
+      "data": {
+        "value": 40
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 88,
+    "fields": {
+      "product": 5,
+      "field": 4,
+      "data": {
+        "value": "In 1996"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 89,
+    "fields": {
+      "product": 5,
+      "field": 5,
+      "data": {
+        "value": "Information about dormitory doesn't exist"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 90,
+    "fields": {
+      "product": 5,
+      "field": 6,
+      "data": {
+        "value": "Student Council; Discussion Club at KSLA"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 91,
+    "fields": {
+      "product": 5,
+      "field": 7,
+      "data": {
+        "value": 3
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 92,
+    "fields": {
+      "product": 5,
+      "field": 8,
+      "data": {
+        "value": "State document on secondary general or secondary vocational education (certificate); ORT original certificate; Copy of the passport; Certificate of registration or military ID; 4 photos of 3x4 size; An initial payment of 30% of the total tuition fee;"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 93,
+    "fields": {
+      "product": 5,
+      "field": 9,
+      "data": {
+        "value": "The scholarship is only available if you are admitted to the Confucius Institute program, then the scholarship in China will be between 1400 and 1700 RMB"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 94,
+    "fields": {
+      "product": 5,
+      "field": 10,
+      "data": {
+        "value": "From 35 000 to 53 000 soms"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 95,
+    "fields": {
+      "product": 5,
+      "field": 11,
+      "data": {
+        "value": "Not indicated"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 96,
+    "fields": {
+      "product": 5,
+      "field": 12,
+      "data": {
+        "value": "Increase wasn't observed"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 97,
+    "fields": {
+      "product": 5,
+      "field": 13,
+      "data": {
+        "value": "ОРТ"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 98,
+    "fields": {
+      "product": 5,
+      "field": 14,
+      "data": {
+        "value": 7
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 99,
+    "fields": {
+      "product": 5,
+      "field": 15,
+      "data": {
+        "value": 16
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 100,
+    "fields": {
+      "product": 5,
+      "field": 16,
+      "data": {
+        "value": "Athletics Tournaments; Sport festivals; Football, volleyball and basketball tournaments"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 101,
+    "fields": {
+      "product": 5,
+      "field": 17,
+      "data": {
+        "value": "Cases of bribery have been seen on rare occasions"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 102,
+    "fields": {
+      "product": 5,
+      "field": 18,
+      "data": {
+        "value": "The average level of corruption is 11%. The average cost of one subject is 1 290 soms, one session is 4 909 soms."
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 103,
+    "fields": {
+      "product": 5,
+      "field": 19,
+      "data": {
+        "value": 4
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 104,
+    "fields": {
+      "product": 5,
+      "field": 20,
+      "data": {
+        "value": 3
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 105,
+    "fields": {
+      "product": 5,
+      "field": 21,
+      "data": {
+        "value": "Mixed, more negative"
+      }
+    }
+  }, {
+    "model": "api.product",
+    "pk": 6,
+    "fields": {
+      "category": 1,
+      "photo_url": "https://vskg-public.s3-us-west-2.amazonaws.com/%D0%9A%D0%A0%D0%A1%D0%A3.png",
+      "name": "KRSU (Kyrgyz Russian Slavic University)"
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 106,
+    "fields": {
+      "product": 6,
+      "field": 1,
+      "data": {
+        "value": "Bishkek, Chui avenue 6"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 107,
+    "fields": {
+      "product": 6,
+      "field": 2,
+      "data": {
+        "value": "Russian"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 108,
+    "fields": {
+      "product": 6,
+      "field": 3,
+      "data": {
+        "value": 35
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 109,
+    "fields": {
+      "product": 6,
+      "field": 4,
+      "data": {
+        "value": "In 1992"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 110,
+    "fields": {
+      "product": 6,
+      "field": 5,
+      "data": {
+        "value": "3 dormitories"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 111,
+    "fields": {
+      "product": 6,
+      "field": 6,
+      "data": {
+        "value": "Student Council at KRSU; Discussion club at KRSU"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 112,
+    "fields": {
+      "product": 6,
+      "field": 7,
+      "data": {
+        "value": 2
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 113,
+    "fields": {
+      "product": 6,
+      "field": 8,
+      "data": {
+        "value": "Application addressed to the rector indicating the faculty and specialty / direction; A copy of the state-recognized secondary education document; Photos of 3x4 cm; Copy of the passport; Copies of documents giving the right to apply for special conditions of admission and benefits; Information about the results of passing the exam (optional)."
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 114,
+    "fields": {
+      "product": 6,
+      "field": 9,
+      "data": {
+        "value": "1500 som per month"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 115,
+    "fields": {
+      "product": 6,
+      "field": 10,
+      "data": {
+        "value": "From 35 000 som per month"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 116,
+    "fields": {
+      "product": 6,
+      "field": 11,
+      "data": {
+        "value": "From 35 000 som per month"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 117,
+    "fields": {
+      "product": 6,
+      "field": 12,
+      "data": {
+        "value": "Every year increases to 2000 som"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 118,
+    "fields": {
+      "product": 6,
+      "field": 13,
+      "data": {
+        "value": "ОРТ"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 119,
+    "fields": {
+      "product": 6,
+      "field": 14,
+      "data": {
+        "value": 9
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 120,
+    "fields": {
+      "product": 6,
+      "field": 15,
+      "data": {
+        "value": 16
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 121,
+    "fields": {
+      "product": 6,
+      "field": 16,
+      "data": {
+        "value": "There are additional sections of all types, as well as tournaments for all these sections."
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 122,
+    "fields": {
+      "product": 6,
+      "field": 17,
+      "data": {
+        "value": "Bribery has been reported quite frequently"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 123,
+    "fields": {
+      "product": 6,
+      "field": 18,
+      "data": {
+        "value": "For KRSU it was revealed that the average level of corruption was 31%. On average, the cost per item was 1,920 soms. To close one session, KRSU students pay an average of 4,270 soms."
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 124,
+    "fields": {
+      "product": 6,
+      "field": 19,
+      "data": {
+        "value": 4
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 125,
+    "fields": {
+      "product": 6,
+      "field": 20,
+      "data": {
+        "value": 2
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 126,
+    "fields": {
+      "product": 6,
+      "field": 21,
+      "data": {
+        "value": "Mostly negative"
+      }
+    }
+  }, {
+    "model": "api.product",
+    "pk": 7,
+    "fields": {
+      "category": 1,
+      "photo_url": "https://vskg-public.s3-us-west-2.amazonaws.com/%D0%9F%D0%BE%D0%BB%D0%B8%D1%82%D0%B5%D1%85.png",
+      "name": "KSTU (Kyrgyz State Technical University)"
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 127,
+    "fields": {
+      "product": 7,
+      "field": 1,
+      "data": {
+        "value": "Bishkek, Mira avenue 66"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 128,
+    "fields": {
+      "product": 7,
+      "field": 2,
+      "data": {
+        "value": "Russian"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 129,
+    "fields": {
+      "product": 7,
+      "field": 3,
+      "data": {
+        "value": 30
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 130,
+    "fields": {
+      "product": 7,
+      "field": 4,
+      "data": {
+        "value": "In 1954"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 131,
+    "fields": {
+      "product": 7,
+      "field": 5,
+      "data": {
+        "value": "3 dormitories"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 132,
+    "fields": {
+      "product": 7,
+      "field": 6,
+      "data": {
+        "value": "Student Council at KSTU, KVN at KSTU, Programming club at KSTU"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 133,
+    "fields": {
+      "product": 7,
+      "field": 7,
+      "data": {
+        "value": 3
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 134,
+    "fields": {
+      "product": 7,
+      "field": 8,
+      "data": {
+        "value": "Certificate of relevant education (school, lyceum, technical school); ORT certificate; Passport or other documents proving the identity of the applicant; A copy of the registration certificate (for those liable for military service); Photos (3х4) - 4 pcs."
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 135,
+    "fields": {
+      "product": 7,
+      "field": 9,
+      "data": {
+        "value": "1700 soms per year"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 136,
+    "fields": {
+      "product": 7,
+      "field": 10,
+      "data": {
+        "value": "Average tuition price starts from 33 000 soms"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 137,
+    "fields": {
+      "product": 7,
+      "field": 11,
+      "data": {
+        "value": "Average tuition fees starts from 33 000 soms"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 138,
+    "fields": {
+      "product": 7,
+      "field": 12,
+      "data": {
+        "value": "Every year increases to 2000 soms"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 139,
+    "fields": {
+      "product": 7,
+      "field": 13,
+      "data": {
+        "value": "ORT"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 140,
+    "fields": {
+      "product": 7,
+      "field": 14,
+      "data": {
+        "value": 8
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 141,
+    "fields": {
+      "product": 7,
+      "field": 15,
+      "data": {
+        "value": 9
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 142,
+    "fields": {
+      "product": 7,
+      "field": 16,
+      "data": {
+        "value": "Track and field athletics, gymnastics, football, basketball, volleyball"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 143,
+    "fields": {
+      "product": 7,
+      "field": 17,
+      "data": {
+        "value": "Bribery cases were seen very often"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 144,
+    "fields": {
+      "product": 7,
+      "field": 18,
+      "data": {
+        "value": "KSTU average level of corruption is 50%. The average cost of one subject is 1 222 soms, one session is 4 700 soms."
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 145,
+    "fields": {
+      "product": 7,
+      "field": 19,
+      "data": {
+        "value": 4
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 146,
+    "fields": {
+      "product": 7,
+      "field": 20,
+      "data": {
+        "value": 3
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 147,
+    "fields": {
+      "product": 7,
+      "field": 21,
+      "data": {
+        "value": "Mostly negative"
+      }
+    }
+  }, {
+    "model": "api.product",
+    "pk": 8,
+    "fields": {
+      "category": 1,
+      "photo_url": "https://vskg-public.s3-us-west-2.amazonaws.com/%D0%9C%D0%B0%D0%BD%D0%B0%D1%81.png",
+      "name": "KTU Manas (Kyrgyz Turkish university)"
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 148,
+    "fields": {
+      "product": 8,
+      "field": 1,
+      "data": {
+        "value": "Bishkek, Djal"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 149,
+    "fields": {
+      "product": 8,
+      "field": 2,
+      "data": {
+        "value": "Turkish, Kyrgyz"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 150,
+    "fields": {
+      "product": 8,
+      "field": 3,
+      "data": {
+        "value": 25
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 151,
+    "fields": {
+      "product": 8,
+      "field": 4,
+      "data": {
+        "value": "In 1995"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 152,
+    "fields": {
+      "product": 8,
+      "field": 5,
+      "data": {
+        "value": "3 dormitories"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 153,
+    "fields": {
+      "product": 8,
+      "field": 6,
+      "data": {
+        "value": "Student Council; Debate Club; AIESEC; Music, dance and language circles"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 154,
+    "fields": {
+      "product": 8,
+      "field": 7,
+      "data": {
+        "value": 4
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 155,
+    "fields": {
+      "product": 8,
+      "field": 8,
+      "data": {
+        "value": "Certificate or diploma of secondary vocational education and their copies; Original and copy of the passport; 2 photos, 3x4; Republican testing certificate and copy; During registration it is necessary to pay a monetary contribution: For passing general testing - 300 soms, for testing in English - 300 soms."
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 156,
+    "fields": {
+      "product": 8,
+      "field": 9,
+      "data": {
+        "value": "From 1500 soms per month"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 157,
+    "fields": {
+      "product": 8,
+      "field": 10,
+      "data": {
+        "value": "Without tuition fees"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 158,
+    "fields": {
+      "product": 8,
+      "field": 11,
+      "data": {
+        "value": "Without tuition fees for foreign students"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 159,
+    "fields": {
+      "product": 8,
+      "field": 12,
+      "data": {
+        "value": "Everything free"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 160,
+    "fields": {
+      "product": 8,
+      "field": 13,
+      "data": {
+        "value": "ORT"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 161,
+    "fields": {
+      "product": 8,
+      "field": 14,
+      "data": {
+        "value": 9
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 162,
+    "fields": {
+      "product": 8,
+      "field": 15,
+      "data": {
+        "value": 2
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 163,
+    "fields": {
+      "product": 8,
+      "field": 16,
+      "data": {
+        "value": "There are additional sections of all types, as well as tournaments in all these types of sections"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 164,
+    "fields": {
+      "product": 8,
+      "field": 17,
+      "data": {
+        "value": "There were no cases of bribery"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 165,
+    "fields": {
+      "product": 8,
+      "field": 18,
+      "data": {
+        "value": null
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 166,
+    "fields": {
+      "product": 8,
+      "field": 19,
+      "data": {
+        "value": 5
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 167,
+    "fields": {
+      "product": 8,
+      "field": 20,
+      "data": {
+        "value": 4
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 168,
+    "fields": {
+      "product": 8,
+      "field": 21,
+      "data": {
+        "value": "Mostly positive"
+      }
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 22,
+    "fields": {
+      "category": 2,
+      "type": 1,
+      "name": "Location"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 23,
+    "fields": {
+      "category": 2,
+      "type": 1,
+      "name": "Cuisine"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 24,
+    "fields": {
+      "category": 2,
+      "type": 1,
+      "name": "Average check"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 25,
+    "fields": {
+      "category": 2,
+      "type": 2,
+      "name": "Rating"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 9,
+    "fields": {
+      "category": 2,
+      "photo_url": "https://vskg-public.s3-us-west-2.amazonaws.com/IrCase.png",
+      "name": "Yr kese"
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 169,
+    "fields": {
+      "product": 9,
+      "field": 22,
+      "data": {
+        "value": "Orozbekov street 62"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 170,
+    "fields": {
+      "product": 9,
+      "field": 23,
+      "data": {
+        "value": "Asian"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 171,
+    "fields": {
+      "product": 9,
+      "field": 24,
+      "data": {
+        "value": "400 - 800 soms"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 172,
+    "fields": {
+      "product": 9,
+      "field": 25,
+      "data": {
+        "value": 4
+      }
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 10,
+    "fields": {
+      "category": 2,
+      "photo_url": "https://vskg-public.s3-us-west-2.amazonaws.com/Sulpara.png",
+      "name": "Supara Ethnic complex"
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 173,
+    "fields": {
+      "product": 10,
+      "field": 22,
+      "data": {
+        "value": "Karagul Akmat street 1а"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 174,
+    "fields": {
+      "product": 10,
+      "field": 23,
+      "data": {
+        "value": "Pizza, International, Asian"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 175,
+    "fields": {
+      "product": 10,
+      "field": 24,
+      "data": {
+        "value": "955 - 2 228 soms"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 176,
+    "fields": {
+      "product": 10,
+      "field": 25,
+      "data": {
+        "value": 4
+      }
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 11,
+    "fields": {
+      "category": 2,
+      "photo_url": "https://vskg-public.s3-us-west-2.amazonaws.com/ChikenStar.png",
+      "name": "Chicken-Star"
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 177,
+    "fields": {
+      "product": 11,
+      "field": 22,
+      "data": {
+        "value": "Erkindik blvd"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 178,
+    "fields": {
+      "product": 11,
+      "field": 23,
+      "data": {
+        "value": "American, Asian, Korean"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 179,
+    "fields": {
+      "product": 11,
+      "field": 24,
+      "data": {
+        "value": "359 - 3 183 soms"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 180,
+    "fields": {
+      "product": 11,
+      "field": 25,
+      "data": {
+        "value": 4
+      }
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 12,
+    "fields": {
+      "category": 2,
+      "photo_url": "https://vskg-public.s3-us-west-2.amazonaws.com/Faiza.png",
+      "name": "Faiza"
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 181,
+    "fields": {
+      "product": 12,
+      "field": 22,
+      "data": {
+        "value": "Jibek jolu street"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 182,
+    "fields": {
+      "product": 12,
+      "field": 23,
+      "data": {
+        "value": "Asian"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 183,
+    "fields": {
+      "product": 12,
+      "field": 24,
+      "data": {
+        "value": "259 - 1 583 soms"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 184,
+    "fields": {
+      "product": 12,
+      "field": 25,
+      "data": {
+        "value": 5
+      }
+    }
+  }
+]

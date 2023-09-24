@@ -1,0 +1,11 @@
+
+
+#add terraform folder to ignore
+**/.terraform/*
+
+#add terraform lock to ignore
+*.terraform.lock.hcl
+
+#add kubeconfig to ignore
+*kubeconfig_Project-EKS
+

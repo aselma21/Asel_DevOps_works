@@ -1,0 +1,4 @@
+version = 1.0
+replicas = 4
+namespace = versus-prod
+hostname = versus-web-prod-22jcentos.exchangeweb.net
